@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "nS1GsbbRElcqHUgAJ/GxVATQY2LWYqJsUmG3tXBaief9D+v49aw7iqAHR/LizBHc+yD8MENZFbAJrtrsOn+vcg==",
+  "dgSpecHash": "1giNs7DP4G01j0QdE2VIvUXJFRsOv1nN+xlxh084yRjoFPapXFK+LzvXOX7ld+WKcJqnHjo+RWvlWgWb1EQlyg==",
   "success": true,
   "projectFilePath": "D:\\prj\\Biss\\ja-foi-demitido\\back\\Biss.Fired.Api.Test\\Biss.Fired.Api.Test.csproj",
   "expectedPackageFiles": [
@@ -13,6 +13,7 @@
     "C:\\Users\\bissl\\.nuget\\packages\\microsoft.aspnetcore.authentication.core\\2.2.0\\microsoft.aspnetcore.authentication.core.2.2.0.nupkg.sha512",
     "C:\\Users\\bissl\\.nuget\\packages\\microsoft.aspnetcore.authorization\\2.2.0\\microsoft.aspnetcore.authorization.2.2.0.nupkg.sha512",
     "C:\\Users\\bissl\\.nuget\\packages\\microsoft.aspnetcore.authorization.policy\\2.2.0\\microsoft.aspnetcore.authorization.policy.2.2.0.nupkg.sha512",
+    "C:\\Users\\bissl\\.nuget\\packages\\microsoft.aspnetcore.cors\\2.2.0\\microsoft.aspnetcore.cors.2.2.0.nupkg.sha512",
     "C:\\Users\\bissl\\.nuget\\packages\\microsoft.aspnetcore.hosting.abstractions\\2.2.0\\microsoft.aspnetcore.hosting.abstractions.2.2.0.nupkg.sha512",
     "C:\\Users\\bissl\\.nuget\\packages\\microsoft.aspnetcore.hosting.server.abstractions\\2.2.0\\microsoft.aspnetcore.hosting.server.abstractions.2.2.0.nupkg.sha512",
     "C:\\Users\\bissl\\.nuget\\packages\\microsoft.aspnetcore.http\\2.2.0\\microsoft.aspnetcore.http.2.2.0.nupkg.sha512",

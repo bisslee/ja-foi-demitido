@@ -1,4 +1,7 @@
+using Biss.Fired.Api.Data;
+using Biss.Fired.Api.Models;
 using Microsoft.AspNetCore.Mvc;
+using Microsoft.EntityFrameworkCore;
 
 namespace Biss.Fired.Api.Controllers
 {
@@ -7,20 +10,22 @@ namespace Biss.Fired.Api.Controllers
     public class MediaController : ControllerBase
     {
         private readonly ILogger<MediaController> _logger;
-
+        private AppDbContext _dbContext = new AppDbContext();
         public MediaController(ILogger<MediaController> logger)
         {
             _logger = logger;
         }
 
-        [HttpGet]
-        public async Task<ActionResult<List<string>>> GetMedia()
+        [HttpGet("{id}")]
+        public async Task<ActionResult<List<Media>>> GetMedia(int id)        
         {
-            List<string> list = new List<string> { "azzul", "Amarelo", "verde" };
-            OkObjectResult result = new OkObjectResult(list);
-            return  result;
+            var entities = await _dbContext.Media.Where(m => m.Fired.Id == id).ToListAsync();
+            if (entities != null)
+                return Ok(entities);
+
+            return NoContent();
+
         }
-       
         [HttpPost]
         public async Task<ActionResult<List<string>>> PostMedia(string name)
         {

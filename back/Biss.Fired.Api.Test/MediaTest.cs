@@ -26,7 +26,8 @@ namespace Biss.Fired.Api.Test
             var logger = Mock.Of<ILogger<MediaController>>();
             var controller = new MediaController(logger);
             // Act
-            var result = await controller.GetMedia();
+            var firedId = 1;
+            var result = await controller.GetMedia(firedId);
             // Assert
             Assert.IsInstanceOf<OkObjectResult>(result.Result);
 
